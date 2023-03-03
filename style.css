@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Arual;
+    src: url(Arual.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+
+body {
+    cursor: url("img/pointer.svg"), auto;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /*background-color: #0f001d;*/
+    font-family: 'Arual';
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: block;
+    padding-left: 24vw
+}
+
+.flex {
+    height: 100%;
+}
+
+.fullwidth {
+    padding-left: 20vw;
+}
+
+
+.sectionhead {
+    margin: 0 0 0 5vw;
+    padding: 3vh 0 3vh 0;
+    font-size: 8vw;
+    color: #ffffff;
+    letter-spacing: 0.5vw;
+    line-height: 17vh;
+}
+
+.sectionsubhead {
+    margin: 0 0 0 5vw;
+    padding: 3vh 0 3vh 0;
+    font-size: 5vw;
+    color: #ffffff;
+    letter-spacing: 0.5vw;
+    line-height: 12vh;
+}
+
+.info {
+    font-size: 1vw;
+    margin-left: 5vw;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+}
+
+.navbtn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    text-align: left;
+    padding: 3vh;
+    color: #b7b7b7;
+}
+
+.navbtn:hover {
+    cursor: url("img/cursor.svg"), pointer;
+    color: #ffffff;
+    box-shadow: inset 100vw 0 0 1vw #242424;
+    border-right: solid 0.2vw #ffffff;
+    animation: hover 1s ease-in-out;
+}
+
+@keyframes hover {
+    0% {
+        color: #b7b7b7;
+        box-shadow: inset 1vw 0 0 0 #242424;
+    }
+
+
+
+
+}
+
+.contentbtn {
+    border-radius: 2vw;
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 3vh;
+    color: #b7b7b7;
+    letter-spacing: 0.2em;
+    border: solid 0.3vh #b7b7b7;
+}
+
+.contentbtn:hover {
+    cursor: url("img/cursor.svg"), pointer;
+    color: #ffffff;
+    box-shadow: inset 0 0 5vw #ffee00;
+    border: solid 0.3vh #ffffff;
+    animation: hover2 0.5s ease-in-out;
+
+}
+
+@keyframes hover2 {
+    0% {
+        border: solid 0.3vh #b7b7b7;
+        color: #b7b7b7;
+        box-shadow: inset 0 0 0 #ffffff00;
+    }
+
+
+    100% {
+        opacity: 50;
+
+    }
+
+
+}
+
+
+
+.nav {
+    z-index: 1;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: #000000;
+    filter: drop-shadow(1px 0px 5px #000000);
+
+
+}
+
+.nav .navbtn {
+    position: relative;
+    display: block;
+    margin: 0 2vw;
+
+}
+
+
+
+.logo {
+    margin-left: 3vw;
+    text-align: left;
+    color: white;
+    font-size: 2vw;
+}
+
+
+
+.homebg {
+    background-image: url(img/texture3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    opacity: 50%;
+}
+
+
+.display {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    margin: 0;
+    height: 95vh;
+    padding: 0 0 0 5vw;
+    filter: drop-shadow(-40px 0px 0px #ffffff74);
+    z-index: -0.5;
+    user-zoom: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+
+}
+
+
+.intro {
+    letter-spacing: 0.5vw;
+    display: block;
+    position: absolute;
+    color: white;
+    margin: 30vh 0 0 0;
+    padding: 0;
+    filter: drop-shadow(0px 0px 0.5vw #000000d2);
+}
+
+.intro h3 {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    line-height: 7vh;
+}
+
+.intro h2 {
+    font-size: 8vw;
+    padding: 0;
+    margin: 0;
+    line-height: 25vh;
+}
+
+.intro h1 {
+    font-size: 12vw;
+    padding: 0;
+    margin: 0;
+    line-height: 15vh;
+}
+
+.works {
+    background: linear-gradient(#1f1f1f 0%, #000000 100%);
+    color: white;
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+    text-align: left;
+    filter: drop-shadow(0px -20px 1vw #00000071);
+}
+
+
+.works .contentbtn {
+    margin: 5vh 2.5vw 2vh 55vw;
+}
+
+
+.adgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    direction: row;
+    margin-left: 5vw;
+    margin-right: 2.5vw;
+    margin-top: 9vh;
+    gap: 1vw;
+}
+
+.ad {
+    background-color: #121212;
+    direction: column;
+    height: 80vh;
+    display: inline-block;
+    overflow: hidden;
+    border: solid rgb(113, 113, 113) 0.2vw;
+    border-radius: 1vw;
+}
+
+.aditem {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    color: #121212;
+    padding: 0;
+
+}
+
+.aditem:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: linear-gradient(360deg, #00000087 25%, #00000000 100%);
+    animation: adbefore 0.5s ease-out;
+}
+
+.ad:hover .aditem:before {
+    display: block;
+
+}
+
+
+.adhover:hover {
+    filter: drop-shadow(0px 0px 0.5vw #000000);
+    animation: adhov 0.5s ease-in-out;
+    cursor: url("img/cursor.svg"), pointer;
+    transform: scale(1.1);
+    cursor: url("img/view.svg"), auto;
+    border: solid #ffee00 0.2vw;
+}
+
+@keyframes adhov {
+    0% {
+        filter: drop-shadow(0px 0px 0px #000000);
+        transform: scale(1);
+    }
+}
+
+@keyframes adbefore {
+    0% {
+        transform: translateY(-80vh);
+    }
+}
+
+
+.services {
+    background: linear-gradient(360deg, #1f1f1f 0%, #000000 100%);
+    color: white;
+    padding-bottom: 15vh;
+    padding-top: 5vh;
+    text-align: left;
+}
